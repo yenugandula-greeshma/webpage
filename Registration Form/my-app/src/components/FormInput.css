@@ -1,0 +1,39 @@
+.FormInput{
+    display:flex;
+    flex-direction: column;
+    width:280px;
+    
+}
+
+input{
+    padding:15px;
+    margin:10px 0px;
+    background: linear-gradient(
+        rgba(255 ,255,255,0.7),
+        rgba(123, 101, 168, 0.3)
+      ),
+      url("https://ak2.picdn.net/shutterstock/videos/1485730/thumb/1.jpg");
+      background-size: cover;
+      background-position: medium;
+      border-radius: 5px;
+      border: 1px solid gray;
+}
+
+label{
+    font-size: 12px;
+}
+span{
+font-size:12px;
+padding: 3px;
+color:red;
+display: none;
+}
+
+input:invalid[focused="true"]{
+    border:1px solid red;
+}
+
+
+input:invalid[focused="true"]~span{
+    display:block;
+}
